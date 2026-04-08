@@ -2,211 +2,178 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FLAVIAN — philharmonie</title>
+  <meta name="viewport" content="width=device-width">
+  <title>FLAVIAN -- philharmonie</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* placeholder styling */
-    .placeholder-block {
-      background: repeating-linear-gradient(
-        45deg,
-        var(--bg-card),
-        var(--bg-card) 10px,
-        var(--bg-card2) 10px,
-        var(--bg-card2) 20px
-      );
-      border: 1px dashed var(--border2);
-      padding: 20px;
-      color: var(--text-dim);
-      font-style: italic;
-      font-size: 13px;
-      line-height: 1.8;
-      margin: 8px 0;
-    }
-
-    .placeholder-block .ph-label {
-      font-family: var(--font-pixel);
-      font-size: 6px;
-      color: var(--pink);
-      letter-spacing: 2px;
-      display: block;
-      margin-bottom: 10px;
-      font-style: normal;
-    }
-
-    .deadline-box {
-      background: var(--bg-card);
-      border: 2px solid var(--pink);
-      box-shadow: 3px 3px 0 rgba(255,110,180,0.2);
-      padding: 16px;
-      margin: 20px 0;
-      text-align: center;
-    }
-
-    .deadline-date {
-      font-family: var(--font-pixel);
-      font-size: 16px;
-      color: var(--pink);
-      text-shadow: 0 0 16px rgba(255,110,180,0.5);
-      display: block;
-      margin: 10px 0;
-      animation: float-bob 3s ease-in-out infinite;
-    }
-
-    .contact-line {
-      font-family: var(--font-pixel);
-      font-size: 6px;
-      color: var(--text-dim);
-      letter-spacing: 1px;
-      margin-top: 10px;
-      display: block;
-    }
-
-    .construction-badge {
-      display: inline-block;
-      font-family: var(--font-pixel);
-      font-size: 6px;
-      background: var(--amber);
-      color: var(--bg);
-      padding: 4px 10px;
-      letter-spacing: 1px;
-      animation: blink 1.5s steps(1) infinite;
-    }
-  </style>
 </head>
 <body>
 
-  <!-- ── MARQUEE ─────────────────────────────────────────── -->
-  <div class="marquee-bar" aria-hidden="true">
-    <div class="marquee-track">
-      <span class="marquee-segment">✦ pourquoi ici ✦ école de la philharmonie de paris ✦ voie libre 2026 ✦ deadline: 17 avril 2026 ✦ en cours de rédaction ✦ après la visite de l'expo jeux vidéo + musique ✦</span>
-      <span class="marquee-segment" aria-hidden="true">✦ pourquoi ici ✦ école de la philharmonie de paris ✦ voie libre 2026 ✦ deadline: 17 avril 2026 ✦ en cours de rédaction ✦ après la visite de l'expo jeux vidéo + musique ✦</span>
-    </div>
-  </div>
+<!-- TOP MARQUEE BAR -->
+<table width="795" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr>
+    <td bgcolor="#000033" style="border-top:2px solid #ff66bb; border-bottom:2px solid #aa0055; padding:3px 0;">
+      <marquee scrollamount="3" direction="left" style="color:#ff66bb; font-family:'Courier New',Courier,monospace; font-size:11px; letter-spacing:1px;">
+        &nbsp;&nbsp;✦ pourquoi ici ✦ école de la philharmonie de paris ✦ voie libre 2026 ✦ deadline: 17 avril 2026 ✦ en cours de rédaction ✦ après la visite de l'expo jeux vidéo + musique ✦&nbsp;&nbsp;&nbsp;&nbsp;✦ pourquoi ici ✦ école de la philharmonie de paris ✦ voie libre 2026 ✦ deadline: 17 avril 2026 ✦ en cours de rédaction ✦ après la visite de l'expo jeux vidéo + musique ✦
+      </marquee>
+    </td>
+  </tr>
+</table>
 
-  <!-- ── SITE WRAPPER ────────────────────────────────────── -->
-  <div class="site-wrapper two-col">
+<!-- MAIN 2-COLUMN LAYOUT -->
+<table width="795" border="0" cellpadding="0" cellspacing="5" align="center" style="margin-top:6px;">
+<tr valign="top">
 
-    <!-- ── NAV ───────────────────────────────────────────── -->
-    <div class="nav-col">
-      <nav class="rpg-nav" aria-label="navigation principale">
-        <div class="nav-title">// menu //</div>
-        <ul>
-          <li><a href="index.html">bienvenue</a></li>
-          <li><a href="origine.html">origine</a></li>
-          <li><a href="maintenant.html">maintenant</a></li>
-          <li><a href="demain.html">demain</a></li>
-          <hr class="nav-sep">
-          <li><a href="philharmonie.html" class="active">philharmonie</a></li>
-        </ul>
-        <div class="nav-foot">
-          ─────<br>
-          page en<br>
-          cours de<br>
-          rédaction<br>
-          ─────<br>
-          <span class="blink">▮</span>
+  <!-- LEFT COLUMN: NAV -->
+  <td width="155" style="padding-right:3px;">
+
+    <table class="win98" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="win98-title">☆ // MENU //</td>
+        <td class="win98-title" align="right" width="22"><span class="win98-btn">×</span></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="win98-body" style="padding:6px 5px 8px;">
+          <a href="index.html" class="navlink">bienvenue</a>
+          <a href="origine.html" class="navlink">origine</a>
+          <a href="maintenant.html" class="navlink">maintenant</a>
+          <a href="demain.html" class="navlink">demain</a>
+          <hr class="dotted">
+          <a href="philharmonie.html" class="navlink navlink-active" style="color:#ff66bb !important;">▶ philharmonie</a>
+          <hr class="dotted">
+          <div style="font-family:'Courier New',monospace; font-size:9px; color:#555588; line-height:2; margin-top:4px; text-align:center;">
+            page en<br>cours de<br>rédaction<br>
+            ─────<br>
+            <span class="blink" style="color:#ff66bb;">▮</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- DEADLINE MINI WIDGET -->
+    <table class="win98" cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="win98-title-pink" colspan="2">📅 deadline !!</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="win98-body-pink" style="text-align:center; padding:8px 6px;">
+          <div style="font-family:'Courier New',monospace; font-size:9px; color:#ff99bb; margin-bottom:4px; letter-spacing:0.5px;">à envoyer avant</div>
+          <div style="font-family:'Press Start 2P',monospace; font-size:9px; color:#ff66bb; text-shadow:0 0 8px rgba(255,100,180,0.5); line-height:1.6; animation:blink 2.5s step-start infinite;">17 AVRIL<br>2026</div>
+          <hr class="dotted" style="margin:6px 0;">
+          <div style="font-family:'Courier New',monospace; font-size:8px; color:#cc88aa; word-break:break-all; line-height:1.6;">ecole@<br>philharmonie<br>deparis.fr</div>
+        </td>
+      </tr>
+    </table>
+
+  </td><!-- /left -->
+
+  <!-- CENTER/MAIN COLUMN -->
+  <td bgcolor="#030310" style="padding:10px 14px 16px; border-left:1px solid #111133;">
+
+    <!-- PAGE HEADER -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td style="padding-bottom:10px; border-bottom:1px solid #1a1a44;">
+          <div class="page-crumb">flavian / philharmonie</div>
+          <div style="font-family:'Press Start 2P',monospace; font-size:13px; color:#ff66bb; letter-spacing:3px; margin:5px 0 5px; line-height:1.5;">pourquoi ici</div>
+          <div style="font-family:Georgia,'Times New Roman',serif; font-size:13px; color:#666688; font-style:italic;">école de la philharmonie de paris — voie libre 2026</div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- STATUT / DEADLINE BOX -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin:12px 0;">
+      <tr>
+        <td bgcolor="#1a0010" style="border:2px outset #aa0055; padding:12px 14px; text-align:center;">
+          <div class="construction-badge">PAGE EN CONSTRUCTION</div>
+          <div class="deadline-date">17 avril 2026</div>
+          <p style="font-family:Georgia,'Times New Roman',serif; font-size:13px; color:#cc88aa; line-height:1.7; margin:4px 0 6px;">
+            cette page sera complétée après la visite de l'exposition<br>
+            <em style="color:#ff99cc;">« Jeux Vidéo &amp; Musique »</em> à la Philharmonie de Paris.
+          </p>
+          <div style="font-family:'Courier New',monospace; font-size:9px; color:#884466; letter-spacing:1px;">ecole@philharmoniedeparis.fr</div>
+        </td>
+      </tr>
+    </table>
+
+    <div align="center" style="font-family:'Courier New',monospace; font-size:10px; color:#222244; letter-spacing:5px; margin:10px 0 8px;">── ✦ ──</div>
+
+    <!-- SECTION 1 -->
+    <details class="accordion" open>
+      <summary>pourquoi l'école de la philharmonie</summary>
+      <div class="accordion-content">
+        <div class="placeholder-block">
+          <span class="ph-label">⟨ à rédiger après la visite de l'exposition ⟩</span>
+          ce qui m'a amené ici spécifiquement. ce que j'attends de cette formation
+          que je ne trouve pas ailleurs. en quoi la philharmonie de paris —
+          son rapport à tous les genres, à la musique vivante, à l'expérimentation —
+          correspond à ce que je cherche.
         </div>
-      </nav>
-    </div>
-
-    <!-- ── MAIN ───────────────────────────────────────────── -->
-    <main class="main-col">
-
-      <div class="page-header">
-        <div class="page-crumb">flavian / philharmonie</div>
-        <h1>pourquoi ici</h1>
-        <p class="page-subtitle">école de la philharmonie de paris — voie libre 2026</p>
       </div>
+    </details>
 
-      <!-- STATUT DE LA PAGE -->
-      <div class="deadline-box">
-        <span class="construction-badge">PAGE EN CONSTRUCTION</span>
-        <span class="deadline-date">17 avril 2026</span>
-        <p style="font-size:12px; color:var(--text-dim); margin:0 0 4px;">
-          cette page sera complétée après la visite de l'exposition<br>
-          <em>« Jeux Vidéo &amp; Musique »</em> à la Philharmonie de Paris.
-        </p>
-        <span class="contact-line">ecole@philharmoniedeparis.fr</span>
+    <!-- SECTION 2 -->
+    <details class="accordion">
+      <summary>l'exposition jeux vidéo &amp; musique — ce que j'y ai trouvé</summary>
+      <div class="accordion-content">
+        <div class="placeholder-block">
+          <span class="ph-label">⟨ à rédiger après la visite — avant le 17 avril ⟩</span>
+          ce que l'exposition a mis en lumière sur le lien entre musique de jeux vidéo
+          et création contemporaine. ce que ça a confirmé, ce que ça a ouvert.
+          comment ça parle directement à mon parcours —
+          commencer par Pokémon Rouge Feu, arriver ici.
+        </div>
       </div>
+    </details>
 
-      <div class="separator">── ✦ ──</div>
-
-      <!-- SECTION 1 — PLACEHOLDER -->
-      <details class="accordion" open>
-        <summary>pourquoi l'école de la philharmonie</summary>
-        <div class="accordion-content">
-          <div class="placeholder-block">
-            <span class="ph-label">⟨ à rédiger après la visite de l'exposition ⟩</span>
-            ce qui m'a amené ici spécifiquement. ce que j'attends de cette formation
-            que je ne trouve pas ailleurs. en quoi la philharmonie de paris —
-            son rapport à tous les genres, à la musique vivante, à l'expérimentation —
-            correspond à ce que je cherche.
-          </div>
+    <!-- SECTION 3 -->
+    <details class="accordion">
+      <summary>ce que j'apporte — ce que j'espère apprendre</summary>
+      <div class="accordion-content">
+        <div class="placeholder-block">
+          <span class="ph-label">⟨ à rédiger ⟩</span>
+          ce que j'apporte : un profil hybride, une écoute formée sur beaucoup de genres,
+          une pratique déjà engagée, une connaissance du terrain.
+          ce que j'espère apprendre : à compléter, à approfondir, à contextualiser.
+          rencontrer des gens qui viennent d'autres horizons musicaux.
         </div>
-      </details>
-
-      <!-- SECTION 2 — PLACEHOLDER -->
-      <details class="accordion">
-        <summary>l'exposition jeux vidéo &amp; musique — ce que j'y ai trouvé</summary>
-        <div class="accordion-content">
-          <div class="placeholder-block">
-            <span class="ph-label">⟨ à rédiger après la visite — avant le 17 avril ⟩</span>
-            ce que l'exposition a mis en lumière sur le lien entre musique de jeux vidéo
-            et création contemporaine. ce que ça a confirmé, ce que ça a ouvert.
-            comment ça parle directement à mon parcours —
-            commencer par Pokémon Rouge Feu, arriver ici.
-          </div>
-        </div>
-      </details>
-
-      <!-- SECTION 3 — PLACEHOLDER -->
-      <details class="accordion">
-        <summary>ce que j'apporte — ce que j'espère apprendre</summary>
-        <div class="accordion-content">
-          <div class="placeholder-block">
-            <span class="ph-label">⟨ à rédiger ⟩</span>
-            ce que j'apporte : un profil hybride, une écoute formée sur beaucoup de genres,
-            une pratique déjà engagée, une connaissance du terrain.
-            ce que j'espère apprendre : à compléter, à approfondir, à contextualiser.
-            rencontrer des gens qui viennent d'autres horizons musicaux.
-          </div>
-        </div>
-      </details>
-
-      <!-- SECTION 4 — DÉCLARATION DE CANDIDATURE -->
-      <details class="accordion">
-        <summary>déclaration de candidature</summary>
-        <div class="accordion-content">
-          <div class="placeholder-block">
-            <span class="ph-label">⟨ déclaration formelle — à rédiger ⟩</span>
-            je me porte candidat à l'école de la philharmonie de paris,
-            voie libre, promotion 2026.<br><br>
-            [texte complet à rédiger — inclura nom complet, coordonnées,
-            parcours condensé, intention claire, et référence à cette candidature
-            comme document de présentation.]
-          </div>
-          <div class="acc-note">
-            ✦ deadline: 17 avril 2026 ✦ ecole@philharmoniedeparis.fr
-          </div>
-        </div>
-      </details>
-
-      <div class="separator" style="margin-top:28px;">── ✦ ──</div>
-
-      <!-- NAVIGATION BAS DE PAGE -->
-      <div style="display:flex; justify-content:space-between; margin-top:20px;">
-        <a href="demain.html" style="font-family:var(--font-pixel); font-size:6px; letter-spacing:1px;">← demain</a>
-        <a href="index.html" style="font-family:var(--font-pixel); font-size:6px; letter-spacing:1px;">accueil →</a>
       </div>
+    </details>
 
-    </main>
-  </div><!-- /site-wrapper -->
+    <!-- SECTION 4 — DÉCLARATION -->
+    <details class="accordion">
+      <summary>déclaration de candidature</summary>
+      <div class="accordion-content">
+        <div class="placeholder-block">
+          <span class="ph-label">⟨ déclaration formelle — à rédiger ⟩</span>
+          je me porte candidat à l'école de la philharmonie de paris,
+          voie libre, promotion 2026.<br><br>
+          [texte complet à rédiger — inclura nom complet, coordonnées,
+          parcours condensé, intention claire, et référence à cette candidature
+          comme document de présentation.]
+        </div>
+        <div class="acc-note">✦ deadline: 17 avril 2026 ✦ ecole@philharmoniedeparis.fr</div>
+      </div>
+    </details>
 
-  <script src="https://unpkg.com/webamp"></script>
-  <script src="script.js"></script>
+    <div align="center" style="font-family:'Courier New',monospace; font-size:10px; color:#222244; letter-spacing:5px; margin:14px 0 10px;">── ✦ ──</div>
+
+    <!-- BOTTOM NAV -->
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td align="left"><a href="demain.html" class="page-nav-link">← demain</a></td>
+        <td align="right"><a href="index.html" class="page-nav-link">accueil →</a></td>
+      </tr>
+    </table>
+
+  </td><!-- /main column -->
+
+</tr>
+</table>
+
+<script src="https://unpkg.com/webamp"></script>
+<script src="script.js"></script>
 </body>
 </html>
