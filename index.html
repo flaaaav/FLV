@@ -25,6 +25,21 @@
 </table>
 
 <!-- ================================================================ -->
+<!-- NOW PLAYING BAR -->
+<!-- ================================================================ -->
+<table width="795" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr>
+    <td class="now-playing-bar">
+      <span class="blink" style="color:#ff00ff;">♪</span>
+      <span style="color:#ff66ff; font-family:'Courier New',monospace; font-size:10px; letter-spacing:2px;"> NOW PLAYING </span>
+      <span class="blink" style="color:#ff00ff;">♪</span>
+      &nbsp;&nbsp;&nbsp;
+      <span style="color:#888899; font-family:'Courier New',monospace; font-size:9px;">[ webamp player — bas à droite → ]</span>
+    </td>
+  </tr>
+</table>
+
+<!-- ================================================================ -->
 <!-- MAIN 3-COLUMN LAYOUT -->
 <!-- ================================================================ -->
 <table width="795" border="0" cellpadding="0" cellspacing="5" align="center" style="margin-top:6px;">
@@ -106,14 +121,16 @@
   <td width="432" bgcolor="#030310" style="padding:10px 12px 12px; border-left:1px solid #111133; border-right:1px solid #111133;">
 
     <!-- HERO TITLE -->
-    <div align="center" style="padding:18px 0 12px;">
+    <div align="center" style="padding:18px 0 10px; overflow:visible;">
       <div class="sitename" aria-label="Flavian">FLAVIAN</div><br>
       <span style="font-family:Georgia,'Times New Roman',serif; font-size:14px; color:#8899bb; font-style:italic; letter-spacing:1px;">producteur en devenir. paris. toutes les musiques.</span>
     </div>
 
+    <div class="deco-dots">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</div>
     <hr class="rainbow">
-    <div align="center" style="font-family:'Courier New',monospace; font-size:10px; color:#333366; letter-spacing:5px; margin:3px 0 5px;">── ✦ ── ✦ ── ✦ ──</div>
+    <div class="deco-stars">★ ✦ ★ ✦ ★ ✦ ★ ✦ ★ ✦ ★ ✦ ★</div>
     <hr class="rainbow">
+    <div class="deco-dots">░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░</div>
 
     <!-- BADGE STRIP (marquee) -->
     <div style="margin:10px 0; overflow:hidden; border-top:1px solid #222244; border-bottom:1px solid #222244; padding:6px 0;" title="hover pour mettre en pause">
@@ -142,13 +159,16 @@
     </div>
 
     <!-- ABOUT BOX -->
+    <div style="margin:8px 0 4px;">
+      <div class="deco-line" style="color:#006655;">✿ ✦ ✿ ✦ ✿ ✦ ✿ ✦ ✿ ✦ ✿ ✦ ✿ ✦ ✿ ✦ ✿</div>
+    </div>
     <table class="win98" cellpadding="0" cellspacing="0">
       <tr>
-        <td class="win98-title">📄 // à propos //</td>
-        <td class="win98-title" align="right" width="22"><span class="win98-btn">×</span></td>
+        <td class="win98-title-green">📄 // à propos //</td>
+        <td class="win98-title-green" align="right" width="22"><span class="win98-btn">×</span></td>
       </tr>
       <tr>
-        <td colspan="2" class="win98-body" style="font-family:Georgia,'Times New Roman',serif; font-size:13px; line-height:1.8; color:#ccddff;">
+        <td colspan="2" class="win98-body-teal" style="font-family:Georgia,'Times New Roman',serif; font-size:13px; line-height:1.8;">
           <p style="margin:0 0 10px;">
             ce site n'est pas un cv. c'est plus proche d'une chambre.
             tu trouveras ici d'où vient la musique pour moi,
@@ -157,7 +177,7 @@
           <p style="margin:0 0 10px;">
             navigue. écoute. reviens.
           </p>
-          <p style="margin:0; color:#666688; font-style:italic; font-size:12px;">
+          <p style="margin:0; color:#669988; font-style:italic; font-size:12px;">
             — f.
           </p>
         </td>
@@ -165,8 +185,9 @@
     </table>
 
     <!-- STAMPS -->
-    <div style="margin:12px 0 4px;">
-      <div align="center" style="font-family:'Courier New',monospace; font-size:10px; color:#333366; letter-spacing:4px; margin-bottom:8px;">── ░░ marques ░░ ──</div>
+    <hr class="rainbow">
+    <div style="margin:8px 0 4px;">
+      <div align="center" style="font-family:'Courier New',monospace; font-size:10px; color:#333366; letter-spacing:4px; margin-bottom:5px;">── ░░ marques ░░ ──</div>
       <div style="padding:4px 2px; line-height:2.4;">
         <span class="stamp" style="--rot:-3deg; background:#000d00; border-color:#00aa00; color:#00ff88;">PARIS 75</span>
         <span class="stamp" style="--rot:2deg;  background:#1a0a00; border-color:#886600; color:#ffaa00;">PRODUCTEUR</span>
@@ -189,36 +210,36 @@
     <!-- CURRENTLY WIDGET -->
     <table class="win98" cellpadding="0" cellspacing="0">
       <tr>
-        <td class="win98-title-green">🎵 currently</td>
-        <td class="win98-title-green" align="right" width="22"><span class="win98-btn">×</span></td>
+        <td class="win98-title-purple">🎵 currently</td>
+        <td class="win98-title-purple" align="right" width="22"><span class="win98-btn">×</span></td>
       </tr>
       <tr>
-        <td colspan="2" class="win98-body-darkgreen" style="padding:8px 7px;">
+        <td colspan="2" class="win98-body-purple" style="padding:8px 7px;">
 
           <div style="margin-bottom:7px;">
-            <span class="mood-key" style="color:#33aa33;">▶ playing</span>
-            <span class="mood-val" id="mood-playing" style="color:#00ff88;">Pokémon Emerald OST</span>
+            <span class="mood-key" style="color:#aa88ff;">▶ playing</span>
+            <span class="mood-val" id="mood-playing" style="color:#ffccff; font-size:11px;">Pokémon Emerald OST</span>
           </div>
 
           <hr class="dotted">
 
           <div style="margin:7px 0;">
-            <span class="mood-key" style="color:#33aa33;">◈ feeling</span>
-            <span class="mood-val" style="color:#aaffbb; font-size:11px;">excité + nostalgique</span>
+            <span class="mood-key" style="color:#aa88ff;">◈ feeling</span>
+            <span class="mood-val" style="color:#ddbbff; font-size:11px;">excité + nostalgique</span>
           </div>
 
           <hr class="dotted">
 
           <div style="margin:7px 0;">
-            <span class="mood-key" style="color:#33aa33;">◎ building</span>
-            <span class="mood-val" style="color:#aaffbb; font-size:11px;">studio + réseau + collectif</span>
+            <span class="mood-key" style="color:#aa88ff;">◎ building</span>
+            <span class="mood-val" style="color:#ddbbff; font-size:11px;">studio + réseau + collectif</span>
           </div>
 
           <hr class="dotted">
 
           <div style="margin-top:7px;">
-            <span class="mood-key" style="color:#33aa33;">◷ soon</span>
-            <span class="mood-val" style="color:#aaffbb; font-size:11px;">platine vinyle + premiers samples</span>
+            <span class="mood-key" style="color:#aa88ff;">◷ soon</span>
+            <span class="mood-val" style="color:#ddbbff; font-size:11px;">platine vinyle + premiers samples</span>
           </div>
 
         </td>
@@ -228,30 +249,30 @@
     <!-- UPDATES LOG -->
     <table class="win98" cellpadding="0" cellspacing="0">
       <tr>
-        <td class="win98-title">📝 // updates //</td>
-        <td class="win98-title" align="right" width="22"><span class="win98-btn">×</span></td>
+        <td class="win98-title-pink">📝 // updates //</td>
+        <td class="win98-title-pink" align="right" width="22"><span class="win98-btn">×</span></td>
       </tr>
       <tr>
-        <td colspan="2" class="win98-body" style="padding:7px 7px 9px; font-size:11px; line-height:1.6;">
+        <td colspan="2" class="win98-body-maroon" style="padding:7px 7px 9px; font-size:11px; line-height:1.6;">
 
-          <div style="margin-bottom:8px; padding-bottom:7px; border-bottom:1px dashed #1a1a44;">
-            <span class="upd-date">07.04.2026</span>
-            site en ligne. bienvenue.
+          <div style="margin-bottom:8px; padding-bottom:7px; border-bottom:1px dashed #3a0018;">
+            <span class="upd-date" style="color:#ff88bb;">07.04.2026</span>
+            <span style="color:#ffbbcc;">site en ligne. bienvenue.</span>
           </div>
 
-          <div style="margin-bottom:8px; padding-bottom:7px; border-bottom:1px dashed #1a1a44;">
-            <span class="upd-date">bientôt</span>
-            vraies musiques uploadées sur le player ♪
+          <div style="margin-bottom:8px; padding-bottom:7px; border-bottom:1px dashed #3a0018;">
+            <span class="upd-date" style="color:#ff88bb;">bientôt</span>
+            <span style="color:#ffbbcc;">vraies musiques uploadées sur le player ♪</span>
           </div>
 
-          <div style="margin-bottom:8px; padding-bottom:7px; border-bottom:1px dashed #1a1a44;">
-            <span class="upd-date">bientôt</span>
-            page philharmonie après la visite de l'expo
+          <div style="margin-bottom:8px; padding-bottom:7px; border-bottom:1px dashed #3a0018;">
+            <span class="upd-date" style="color:#ff88bb;">bientôt</span>
+            <span style="color:#ffbbcc;">page philharmonie après la visite de l'expo</span>
           </div>
 
           <div style="margin-bottom:0;">
-            <span class="upd-date">bientôt</span>
-            platine. premiers samples. premiers sons à moi.
+            <span class="upd-date" style="color:#ff88bb;">bientôt</span>
+            <span style="color:#ffbbcc;">platine. premiers samples. premiers sons à moi.</span>
           </div>
 
         </td>
